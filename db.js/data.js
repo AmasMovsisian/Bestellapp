@@ -35,4 +35,5 @@ let myDishes = [
         "description": "mit Mozzarella, Gorgonzola, Parmesan und Emmentaler",
         "amounts": 0,
     },
+    
 ];
