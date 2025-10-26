@@ -8,7 +8,30 @@ body{
 
 header{
     background-color: chocolate;
+    z-index: 10;
     box-shadow: 0px 2px 4px black;
+}
+
+.restaurant_sec{
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.restaurant_rating{
+    color: tomato;
+    font-weight: bold;
+}
+
+.main_foods{
+    background-color: antiquewhite;
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .dish_container{
@@ -33,7 +56,7 @@ header{
     border-color: rgb(30, 30, 30);
      margin-bottom: 16px;
     margin-top: 16px;
-    margin-left: 16px;
+    margin-left: 32px;
     margin-right: 16px;
 }
 
