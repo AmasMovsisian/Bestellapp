@@ -62,7 +62,7 @@ a:hover{
 .subheadlining{
     font-weight: bold;
     padding-top: 16px;
-    margin-left: 32px;
+    margin-left: 48px;
     margin-right: 32px;
 }
 
@@ -82,17 +82,22 @@ p{
     font-size: bold;
 }
 
-.add_icon{
+.add_icon {
   color: tomato;
   font-weight: bold;
   font-size: 32px;
-  flex: 0;
-  flex-shrink: 0;
-  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  height: auto;
+  align-self: flex-start;
+  margin: 0;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
-.add_icon:hover{
-    cursor: pointer;
-    color: rgba(255, 99, 71, 0.768);
-    box-shadow: 0px 1px 7px black;
+.add_icon:hover {
+  cursor: pointer;
+  color: rgba(255, 99, 71, 0.5);
 }

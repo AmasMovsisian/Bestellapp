@@ -60,15 +60,17 @@ header{
 .dishes_basket{
     display: flex;
     justify-content: space-between;
-    padding: 16px;
     background-color: rgb(255, 255, 255);
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(30, 30, 30);
-     margin-bottom: 16px;
+    border-color: rgb(30, 30, 30, 0.3);
+
+    margin-bottom: 16px;
     margin-top: 16px;
     margin-left: 32px;
     margin-right: 16px;
+
+    padding-left: 16px;
 }
 
 .food_Container0,
@@ -80,5 +82,5 @@ header{
     display: flex;
     flex-direction: column;
     flex-grow: 0; 
-    flex-shrink: 0;  
+    flex-shrink: 0;
 }
