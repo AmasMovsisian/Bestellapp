@@ -1,14 +1,10 @@
-.basket_container{
-    width: 300px;
-    height: auto;
-    position: sticky;
-    background-color: rgb(231, 231, 231);
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(30, 30, 30);
-    border-radius: 6px;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    margin-left:32px;
-    margin-right: 32px;
+.basket_container {
+  width: 300px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
