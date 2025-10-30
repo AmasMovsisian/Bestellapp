@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bestell-App</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/assets.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/basket.css" />
-    <script src="./db.js/data.js"></script>
-    <script src="./db.js/script.js"></script>
-    <script src="./db.js/template.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="./assets/Favicon/favicon.ico" />
-  </head>
 
-  <body onload="init()">
-    <header>
-      <a href="./index.html"
-        ><img class="logo" src="./assets/Logo/Logo.png" alt="Logo"
-      /></a>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bestell-App</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/assets.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/basket.css" />
+  <script src="./db.js/data.js"></script>
+  <script src="./db.js/script.js"></script>
+  <script src="./db.js/template.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="./assets/Favicon/favicon.ico" />
+</head>
 
-    <main class="main">
-      <div class="main_container_togheter">
-        <div class="left_container">
-          <section class="hero"></section>
+<body onload="init()">
+  <header>
+    <a href="./index.html"><img class="logo" src="./assets/Logo/Logo.png" alt="Logo" /></a>
+  </header>
 
-          <div class="hero_logo_container">
-            <div class="hero_logo"></div>
-          </div>
+  <main class="main">
+    <div class="main_container_togheter">
+      <div class="left_container">
+        <section class="hero"></section>
 
-          <section class="restaurant_sec">
-            <h1>Pizzeria Italia</h1>
-            <span class="restaurant_rating">Bewertung (4.2 von 5 Sternen)</span>
-
-            <div class="main_foods">
-              <span class="main_food_icon"><strong>&#10148;</strong></span>
-              <a href="./index.html">Hauptgerichte</a>
-              <a href="./index.html">Beilage</a>
-            </div>
-          </section>
-
-          <section class="menu_img"></section>
-
-          <h2 class="subheadlining">Hauptgerichte</h2>
-
-          <section class="dish_container">
-            <div class="dishes_container" id="dishes"></div>
-          </section>
+        <div class="hero_logo_container">
+          <div class="hero_logo"></div>
         </div>
 
-        <div class="right_container">
+        <section class="restaurant_sec">
+          <h1>Pizzeria Italia</h1>
+          <span class="restaurant_rating">Bewertung (4.2 von 5 Sternen)</span>
 
-            <div class="basket_container" id="basket">
-                <h2 class="baset_subheadline">Warenkorb</h2><br>
-                <div class="basket_Content" id="basketContent"></div>
-            </div>
+          <div class="main_foods">
+            <span class="main_food_icon"><strong>&#10148;</strong></span>
+            <a href="./index.html">Hauptgerichte</a>
+            <a href="./index.html">Beilage</a>
+          </div>
+        </section>
+
+        <section class="menu_img"></section>
+
+        <h2 class="subheadlining">Hauptgerichte</h2>
+
+        <section class="dish_container">
+          <div class="dishes_container" id="dishes"></div>
+        </section>
+      </div>
+
+      <div class="right_container">
+        <div class="basket_container" id="basket">
+          <h2 class="baset_subheadline">Warenkorb</h2>
+          <br />
+
+          <div class="basket_Content" id="basketContent"></div>
+
+          <div class="price_calculation" id="priceCalculation"></div>
+
+          <div class="order_items" id="orderItems"></div>
         </div>
       </div>
-    </main>
-  </body>
-</html>
 
+      <div id="overlay" class="overlay" onclick="closeDialog()"></div>
+      <div id="dialog" class="dialog_container">
+        <p>Danke für die Bestellung.</p>
+        <button onclick="closeDialog()">OK</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

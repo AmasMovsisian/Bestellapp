@@ -1,29 +1,29 @@
-*{
+* {
     margin: 0;
 }
 
-body{
+body {
     background-color: white;
 }
 
-header{
+header {
     background-color: chocolate;
     z-index: 10;
     box-shadow: 0px 2px 4px black;
 }
 
-.main_container_togheter{
+.main_container_togheter {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 
 }
 
-.left_container{
+.left_container {
     flex-grow: 1;
 }
 
-.restaurant_sec{
+.restaurant_sec {
     padding-left: 32px;
     padding-right: 32px;
     height: 220px;
@@ -33,31 +33,31 @@ header{
     align-items: flex-start;
 }
 
-.restaurant_rating{
+.restaurant_rating {
     color: tomato;
     font-weight: bold;
 }
 
-.main_foods{
+.main_foods {
     background-color: antiquewhite;
     width: 100%;
     padding-top: 6px;
     padding-bottom: 6px;
 }
 
-.dish_container{
+.dish_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.dishes_container{
+.dishes_container {
     flex-grow: 1;
-    
+
 }
 
-.dishes_basket{
+.dishes_basket {
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
@@ -81,6 +81,6 @@ header{
 .food_Container5 {
     display: flex;
     flex-direction: column;
-    flex-grow: 0; 
+    flex-grow: 0;
     flex-shrink: 0;
 }
