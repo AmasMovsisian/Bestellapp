@@ -1,4 +1,4 @@
-.logo{
+.logo {
     padding-left: 32px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -11,19 +11,19 @@
     width: 100%;
     height: 360px;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: cover;
     z-index: -10;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero_logo_container{
+.hero_logo_container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero_logo{
+.hero_logo {
     position: absolute;
     z-index: 1000;
     border-radius: 50%;
@@ -33,79 +33,79 @@
     box-shadow: 0px 1px 7px black;
 }
 
-.main_food_icon{
+.main_food_icon {
     padding-left: 16px;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(20, 20, 20);
     padding-left: 16px;
 }
 
-a:hover{
+a:hover {
     color: rgba(20, 20, 20, 0.5);
 }
 
-.menu_img{
+.menu_img {
     z-index: 1000;
     height: 260px;
     background-image: url(../assets/img/MainMenuIMG.jpg);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: cover;
     z-index: -10;
     margin-left: 32px;
     margin-right: 32px;
 }
 
-.subheadlining{
+.subheadlining {
     font-weight: bold;
     padding-top: 16px;
     margin-left: 48px;
     margin-right: 32px;
 }
 
-.baset_subheadline{
+.baset_subheadline {
     padding: 16px;
     text-align: center;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-p{
+p {
     margin-top: 16px;
     margin-bottom: 32px;
 }
 
-.price{
+.price {
     color: chocolate;
     font-size: bold;
 }
 
 .add_icon {
-  color: tomato;
-  font-weight: bold;
-  font-size: 32px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgb(0, 0, 0, 0.3);
-  height: auto;
-  align-self: flex-start;
-  margin: 0;
-  padding-left: 6px;
-  padding-right: 6px;
+    color: tomato;
+    font-weight: bold;
+    font-size: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: auto;
+    align-self: flex-start;
+    margin: 0;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .add_icon:hover {
-  cursor: pointer;
-  color: rgba(255, 99, 71, 0.5);
+    cursor: pointer;
+    color: rgba(255, 99, 71, 0.5);
 }
 
-.material-icons{
+.material-icons {
     font-size: 16px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }

@@ -20,7 +20,7 @@ let myDishes = [
     {
         "name": "Pizza Vegetariana",
         "price": 9.20,
-        "description": "mit Paprika, Zucchini, Oliven und frischem Mozzarella",
+        "description": "mit Paprika, Zucchini und Oliven",
         "amounts": 0,
     },
     {
@@ -32,7 +32,7 @@ let myDishes = [
     {
         "name": "Pizza Quattro Formaggi",
         "price": 10.00,
-        "description": "mit Mozzarella, Gorgonzola, Parmesan und Emmentaler",
+        "description": "mit 4 Käsesorten",
         "amounts": 0,
     },
     

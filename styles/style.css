@@ -2,8 +2,13 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(255, 247, 238, 0.237);
 }
 
 header {
@@ -83,4 +88,106 @@ header {
     flex-direction: column;
     flex-grow: 0;
     flex-shrink: 0;
+}
+
+.responsive_basket_BTN {
+    display: none;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 157, 255);
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    padding: 12px;
+    border-radius: 6px;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99999;
+    transition: all 0.2s ease-in-out;
+}
+
+.responsive_basket_BTN:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 7px black;
+    padding: 16px;
+    font-size: 18px;
+}
+
+@media (max-width: 1012px) {
+    .right_container {
+        display: none;
+    }
+
+    .responsive_basket_BTN {
+        display: block;
+    }
+}
+
+@media (max-width: 644px) {
+    .hero_logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        margin-top: 64px;
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .add_icon {
+        background-color: chocolate;
+        color: white;
+        width: 90%;
+        border-radius: 6px;
+        margin-bottom: 16px;
+        align-self: center;
+    }
+
+    .dishes_basket {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .food_Container0,
+    .food_Container1,
+    .food_Container2,
+    .food_Container3,
+    .food_Container4,
+    .food_Container5 {
+        text-align: center;
+    }
 }

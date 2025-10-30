@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bestell-App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/assets.css" />
   <link rel="stylesheet" href="./styles/style.css" />
@@ -35,18 +36,22 @@
 
           <div class="main_foods">
             <span class="main_food_icon"><strong>&#10148;</strong></span>
-            <a href="./index.html">Hauptgerichte</a>
+            <a href="#hauptgerichte">Hauptgerichte</a>
             <a href="./index.html">Beilage</a>
           </div>
+
         </section>
 
         <section class="menu_img"></section>
 
-        <h2 class="subheadlining">Hauptgerichte</h2>
+        <h2 class="subheadlining" id="hauptgerichte">Hauptgerichte</h2>
 
         <section class="dish_container">
           <div class="dishes_container" id="dishes"></div>
         </section>
+
+        <button class="responsive_basket_BTN" id="responsiveBasketBTN" onclick="openBasket()">WARENKORB</button>
+        <div id="openBasket"></div>
       </div>
 
       <div class="right_container">

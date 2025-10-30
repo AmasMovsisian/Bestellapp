@@ -108,13 +108,11 @@ function updateOrderButtonStyle() {
 
 function orderConfirm() {
   const orderBtn = document.getElementById("orderBtn");
-
   if (basketDishes.length > 0) {
     showDialog();
   } else {
     orderBtn.disabled = true;
   }
-
   updateOrderButtonStyle();
 }
 
@@ -126,4 +124,12 @@ function showDialog() {
 function closeDialog() {
   document.getElementById("overlay").style.display = "none";
   document.getElementById("dialog").style.display = "none";
+}
+
+function openBasket() {
+  let openBasketRef = document.getElementById("openBasket");
+  openBasketRef.innerHTML = "";
+  for (let j = 0; j < basketDishes.length; j++) {
+    openBasketRef.innerHTML += getHTMLBasketDishes(j);
+  }
 }
