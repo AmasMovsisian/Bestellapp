@@ -48,6 +48,7 @@ header {
     width: 100%;
     padding-top: 6px;
     padding-bottom: 6px;
+    border-radius: 6px;
 }
 
 .dish_container {
@@ -69,6 +70,7 @@ header {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(30, 30, 30, 0.3);
+    border-radius: 6px;
 
     margin-bottom: 16px;
     margin-top: 16px;

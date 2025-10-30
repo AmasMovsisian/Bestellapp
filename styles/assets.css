@@ -57,6 +57,7 @@ a:hover {
     z-index: -10;
     margin-left: 32px;
     margin-right: 32px;
+    border-radius: 6px;
 }
 
 .subheadlining {
