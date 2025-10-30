@@ -136,10 +136,24 @@ function closeDialog() {
   document.getElementById("dialog").style.display = "none";
 }
 
-function openBasket() {
-  let openBasketRef = document.getElementById("openBasket");
-  openBasketRef.innerHTML = "";
-  for (let j = 0; j < basketDishes.length; j++) {
-    openBasketRef.innerHTML += getHTMLBasketDishes(j);
+let basketVisible = false;
+
+function showBasketDialog() {
+  let rightContainerRef = document.getElementById("rightContainer");
+  let leftContainerRef = document.getElementById("leftContainer");
+  let responsiveBasketBTNRef = document.getElementById("responsiveBasketBTN");
+  let mobileBasketBTNRef = document.getElementById("mobileBasketBTN");
+  if (basketVisible) {
+    rightContainerRef.style.display = "none";
+    leftContainerRef.style.display = "block";
+    responsiveBasketBTNRef.style.display = "block";
+    mobileBasketBTNRef.style.display = "none";
+    basketVisible = false;
+  } else {
+    rightContainerRef.style.display = "block";
+    leftContainerRef.style.display = "none";
+    responsiveBasketBTNRef.style.display = "none";
+    mobileBasketBTNRef.style.display = "block";
+    basketVisible = true;
   }
 }

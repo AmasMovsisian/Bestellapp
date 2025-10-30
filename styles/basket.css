@@ -159,3 +159,57 @@
   cursor: pointer;
   background-color: rgba(141, 255, 118, 0.5);
 }
+
+.Mobile_basket_BTN {
+  display: none;
+  margin-top: 16px;
+  width: 90%;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 157, 255);
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 6px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 16px;
+  z-index: 99999;
+  transition: all 0.2s ease-in-out;
+}
+
+.Mobile_basket_BTN:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 7px black;
+  padding: 16px;
+  font-size: 18px;
+}
+
+
+@media (max-width: 1012px) {
+
+  .right_container {
+    display: none;
+    margin: auto;
+
+  }
+
+  .basket_container {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .baset_subheadline {
+    display: none;
+  }
+
+  .dialog_container {
+    width: 250px;
+    height: auto;
+  }
+
+}

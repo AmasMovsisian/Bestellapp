@@ -22,8 +22,9 @@
   </header>
 
   <main class="main">
+     <button class="responsive_basket_BTN" id="responsiveBasketBTN" onclick="showBasketDialog()">WARENKORB</button>
     <div class="main_container_togheter">
-      <div class="left_container">
+      <div class="left_container" id="leftContainer">
         <section class="hero"></section>
 
         <div class="hero_logo_container">
@@ -50,17 +51,16 @@
           <div class="dishes_container" id="dishes"></div>
         </section>
 
-        <button class="responsive_basket_BTN" id="responsiveBasketBTN" onclick="openBasket()">WARENKORB</button>
-        
         <div id="openBasket">
-          
+
         </div>
 
       </div>
 
-      <div class="right_container">
+      <div class="right_container" id="rightContainer">
         <div class="basket_container" id="basket">
           <h2 class="baset_subheadline">Warenkorb</h2>
+          <button class="Mobile_basket_BTN" id="mobileBasketBTN" onclick="showBasketDialog()">WARENKORB</button>
           <br />
 
           <div class="basket_Content" id="basketContent"></div>
@@ -76,8 +76,13 @@
         <p>Danke für die Bestellung.</p>
         <button onclick="closeDialog()">OK</button>
       </div>
+
+    </div>
+    </div>
+
     </div>
   </main>
+
 </body>
 
 </html>
