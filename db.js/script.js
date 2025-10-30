@@ -107,9 +107,13 @@ function updateOrderButtonStyle() {
 }
 
 function orderConfirm() {
+  let priceCalculationRef = document.getElementById("priceCalculation");
   const orderBtn = document.getElementById("orderBtn");
   if (basketDishes.length > 0) {
     showDialog();
+    basketDishes.length = 0;
+    renderBasket();
+    priceCalculationRef.innerHTML = getHTMLEmptyBasketText();
   } else {
     orderBtn.disabled = true;
   }
@@ -128,8 +132,5 @@ function closeDialog() {
 
 function openBasket() {
   let openBasketRef = document.getElementById("openBasket");
-  openBasketRef.innerHTML = "";
-  for (let j = 0; j < basketDishes.length; j++) {
-    openBasketRef.innerHTML += getHTMLBasketDishes(j);
-  }
+  openBasketRef.innerHTML += getHTMLBasketDishes(j);
 }
