@@ -21,7 +21,7 @@ function getHTMLBasketDishes(j) {
             <div class="basket_items">
             <button class="pricesCalcBTNs" onclick="removeFromBasket(${j})">-</button> 
             <span>${basketDishes[j].amount}x</span>
-            <button class="pricesCalcBTNs" onclick="addToBasket(${j})">+</button> 
+            <button class="pricesCalcBTNs" onclick="increaseInBasket(${j})">+</button> 
 
             <span>${(basketDishes[j].price * basketDishes[j].amount).toFixed(2)} €</span>
             <button class="remove_all_BTN" onclick="clearBasket(${j})"><i class="material-icons">delete</i></button>

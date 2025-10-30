@@ -59,6 +59,12 @@ function addToBasket(i) {
   priceCalculation();
 }
 
+function increaseInBasket(index) {
+  basketDishes[index].amount++;
+  renderBasket();
+  priceCalculation();
+}
+
 function priceCalculation() {
   let priceCalculationRef = document.getElementById("priceCalculation");
   let subtotal = 0;
@@ -132,5 +138,8 @@ function closeDialog() {
 
 function openBasket() {
   let openBasketRef = document.getElementById("openBasket");
-  openBasketRef.innerHTML += getHTMLBasketDishes(j);
+  openBasketRef.innerHTML = "";
+  for (let j = 0; j < basketDishes.length; j++) {
+    openBasketRef.innerHTML += getHTMLBasketDishes(j);
+  }
 }
